@@ -89,26 +89,26 @@ Version      : 1.0
         /*END SMOOTH SCROLL JS*/
 
         /*START CONTACT MAP JS*/
-        var contact = {
-            "lat": "23.1446247",
-            "lon": "79.9048111"
-        }; //Change a map coordinate here!
-        try {
-            $('.map').gmap3({
-                action: 'addMarker',
-                latLng: [contact.lat, contact.lon],
-                map: {
-                    center: [contact.lat, contact.lon],
-                    zoom: 5
-                },
-            }, {
-                action: 'setOptions',
-                args: [{
-                    scrollwheel: false
-                }]
-            });
-        } catch (err) {}
-        /*END CONTACT MAP JS*/
+        // var contact = {
+        //     "lat": "23.1446247",
+        //     "lon": "79.9048111"
+        // }; 
+        // try {
+        //     $('.map').gmap3({
+        //         action: 'addMarker',
+        //         latLng: [contact.lat, contact.lon],
+        //         map: {
+        //             center: [contact.lat, contact.lon],
+        //             zoom: 5
+        //         },
+        //     }, {
+        //         action: 'setOptions',
+        //         args: [{
+        //             scrollwheel: false
+        //         }]
+        //     });
+        // } catch (err) {}
+  
 
         /*START SCROLL TO UP*/
         $(window).on('scroll', function() {
