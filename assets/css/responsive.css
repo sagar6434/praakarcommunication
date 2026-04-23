@@ -1,30 +1,95 @@
-/* Medium Layout: 1280px. */
+/* Medium Layout: 992px to 1200px */
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {}
-/* Tablet Layout: 768px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .mainmenu .navbar-nav li a {
+        padding: 30px 12px;
+    }
+    .single-slide-item h2 {
+        font-size: 44px;
+        line-height: 1.15;
+    }
+    .single-slide-item p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 700px;
+    }
+    .single-growth-step,
+    .network-card {
+        min-height: 260px;
+    }
+    .contact-conversion-box,
+    .contact-benefits-box {
+        min-height: 460px;
+    }
+}
+
+/* Tablet Layout: 768px to 991px */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .mainmenu .navbar-nav li a {
-        font-size: 12px;
-        padding: 30px 11px;
+    .section-padding {
+        padding: 55px 0;
     }
+    .mainmenu .navbar-nav li a,
     .menu-bg .mainmenu .navbar-nav li a {
-        padding: 30px 11px;
+        font-size: 12px;
+        padding: 28px 10px;
     }
     .logo {
-        float: left
+        float: left;
     }
     .menu-bg .logo {
         padding-top: 29px;
     }
     .nav-cta,
     .menu-bg .nav-cta {
-        margin-top: 18px;
+        margin-top: 16px;
         padding: 8px 14px !important;
+    }
+    .single-slide-item h2 {
+        font-size: 38px;
+        line-height: 1.15;
+    }
+    .single-slide-item p {
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 640px;
+    }
+    .hero-cta-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero-highlights span {
+        margin: 6px 4px;
+    }
+    .lead-strip-copy,
+    .lead-strip-actions {
+        padding-top: 0;
+        text-align: center;
+    }
+    .lead-strip-btn {
+        margin: 6px 4px;
+    }
+    .single-growth-step,
+    .network-card,
+    .single-team {
+        min-height: 0;
     }
     .single-growth-step {
         margin-bottom: 20px;
-        min-height: 0;
+    }
+    .team-intro-card {
+        padding: 24px;
+    }
+    .team-photo-wrap {
+        padding: 26px 24px 18px;
+    }
+    .team-photo-wrap img {
+        max-height: 260px;
+    }
+    .team-content {
+        padding: 34px 22px 6px;
     }
     .brands-intro-strip span {
         font-size: 11px;
@@ -32,7 +97,12 @@
         padding: 9px 12px;
     }
     .network-visual-copy {
-        padding-top: 10px;
+        padding-top: 0;
+        text-align: center;
+    }
+    .network-visual-points {
+        display: inline-block;
+        text-align: left;
     }
     .india-coverage-card {
         min-height: 320px;
@@ -43,117 +113,207 @@
     .contact-conversion-box,
     .contact-benefits-box {
         min-height: 0;
+        padding: 30px 24px;
+    }
+    .contact-action-btn {
+        font-size: 12px;
+        padding: 14px 16px;
+    }
+    .footer-widget {
+        margin-top: 25px;
     }
 }
-/* Mobile Layout: 320px. */
+
+/* Mobile Layout: up to 767px */
 
 @media only screen and (max-width: 767px) {
+    body {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    .section-padding {
+        padding: 50px 0;
+    }
+    .section-title {
+        margin-bottom: 36px;
+    }
+    .section-title h2 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
     .navbar-toggle .icon-bar {
         background: #f8f8f8;
     }
     .menu-bg .navbar-toggle .icon-bar {
         background: #3ac4fa;
     }
-    .navbar-toggle {
-        margin-right: 0px;
-        margin-top: -30px;
-    }
     .navbar {
-        min-height: 0px;
-    }
-    .mainmenu .navbar-nav li a {
-        padding: 11px 15px;
-    }
-    .menu-bg .mainmenu .navbar-nav li a {
-        padding: 11px 15px;
+        min-height: 0;
     }
     .navbar-toggle {
+        margin-right: 0;
         margin-top: -34px;
     }
-    .navbar-collapse {
-        background: rgba(0, 0, 0, .9);
+    .mainmenu .navbar-nav li a,
+    .menu-bg .mainmenu .navbar-nav li a {
+        padding: 12px 15px;
     }
+    .navbar-collapse,
     .menu-bg .navbar-collapse {
-        background: rgba(0, 0, 0, .9);
-    }
-    .single-slide-item h2 {
-        font-size: 24px;
-        line-height: 26px;
-    }
-    a.slide-btn {
-        font-size: 14px;
-        padding: 8px 16px;
-        width: 120px;
-    }
-    .welcome-control {
-        display: none;
-    }
-    .single-slide-item p {
-        margin-bottom: 5px;
-    }
-    .section-title h2 {
-        font-size: 20px;
-    }
-    .single-featured {
-        cursor: pointer;
-        margin-top: 30px;
-    }
-    .great-started-text h4 {
-        font-size: 15px;
-    }
-    ul.work li {
-        margin: 2px 0 5px;
-        padding: 8px 10px;
-    }
-    .single-post-content h4 > a {
-        font-size: 16px;
-    }
-    .footer-widget {
-        margin-top: 30px;
+        background: rgba(0, 0, 0, 0.92);
     }
     .nav-cta,
     .menu-bg .nav-cta {
         border-radius: 0;
         margin-top: 0;
-        padding: 11px 15px !important;
+        padding: 12px 15px !important;
+    }
+    .single-slide-item-table-cell {
+        padding: 110px 0 60px;
+    }
+    .single-slide-item h2 {
+        font-size: 30px;
+        line-height: 1.15;
+        margin-bottom: 14px;
+    }
+    .single-slide-item h4 {
+        font-size: 13px;
+        letter-spacing: 0.25em;
+        line-height: 1.5;
+    }
+    .single-slide-item p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin: 0 auto 12px;
+        max-width: 300px;
     }
     .hero-kicker {
         font-size: 10px;
         line-height: 1.4;
+        margin-bottom: 16px;
+        padding: 7px 12px;
+    }
+    .hero-cta-group {
+        display: block;
+        margin-top: 20px;
+    }
+    a.slide-btn {
+        display: block;
+        font-size: 13px;
+        margin: 10px auto 0;
+        max-width: 240px;
+        padding: 11px 16px;
+        width: 100%;
+    }
+    .hero-highlights {
+        margin-top: 20px;
     }
     .hero-highlights span {
         display: block;
         margin: 8px auto;
         max-width: 280px;
     }
+    .welcome-control {
+        display: none;
+    }
+    .about-text h4,
+    .our-Expertise h4 {
+        margin-top: 30px;
+    }
+    .progress-bar-inner {
+        margin-bottom: 10px;
+    }
+    .lead-strip {
+        padding: 28px 0;
+    }
     .lead-strip-copy,
     .lead-strip-actions {
         padding-top: 0;
         text-align: center;
     }
+    .lead-strip-copy h3 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
     .lead-strip-btn {
         display: block;
+        margin: 10px auto 0;
+        max-width: 250px;
     }
     .single-growth-step {
-        margin-bottom: 20px;
+        margin-bottom: 18px;
+        min-height: 0;
+        padding: 24px 20px;
+    }
+    .single-growth-step h4 {
+        font-size: 16px;
+    }
+    .team-intro-card {
+        padding: 22px 18px;
+    }
+    .team-intro-card strong {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .single-team {
+        margin-top: 22px;
         min-height: 0;
     }
-    .brands-intro-strip span {
+    .team-photo-wrap {
+        padding: 22px 18px 16px;
+    }
+    .team-photo-wrap img {
+        max-height: 230px;
+    }
+    .team-role-badge {
         font-size: 10px;
-        margin: 4px 3px;
-        padding: 8px 10px;
+        padding: 9px 12px;
+        width: max-content;
+    }
+    .team-content {
+        padding: 32px 18px 4px;
+    }
+    .team-member {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    .team-description {
+        font-size: 14px;
+    }
+    ul.team-social a {
+        height: 40px;
+        margin: 0 5px;
+        width: 40px;
     }
     .network-summary-card,
     .network-card {
-        margin-top: 20px;
+        margin-top: 18px;
         min-height: 0;
+    }
+    .network-summary-card {
+        padding: 24px 18px;
+    }
+    .network-summary-card strong {
+        font-size: 30px;
+    }
+    .network-intro p {
+        font-size: 15px;
+        line-height: 1.7;
     }
     .network-visual-copy {
         padding-top: 0;
         text-align: center;
     }
+    .network-visual-copy h3 {
+        font-size: 22px;
+        line-height: 1.35;
+    }
+    .network-visual-points {
+        display: inline-block;
+        text-align: left;
+    }
     .india-coverage-card {
-        margin-top: 10px;
+        margin-top: 12px;
         min-height: 330px;
     }
     .coverage-badge {
@@ -182,29 +342,122 @@
         height: 160px;
         width: 160px;
     }
-    .network-intro p {
-        font-size: 15px;
+    .brands-intro-strip {
+        margin-top: 0;
+    }
+    .brands-intro-strip span {
+        font-size: 10px;
+        margin: 4px 3px;
+        padding: 8px 10px;
+    }
+    .single-work {
+        margin-top: 20px;
+    }
+    .work-info-text {
+        margin-top: 38%;
+        padding: 0 18px;
+    }
+    .work-info-text h5 {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .brands-footer {
+        padding-top: 35px;
+    }
+    .brands-footer p {
+        font-size: 12px;
         line-height: 1.7;
     }
     .contact-conversion-box,
     .contact-benefits-box {
         min-height: 0;
-        padding: 28px 20px;
+        padding: 24px 18px;
+    }
+    .contact-conversion-box h3,
+    .contact-benefits-box h3 {
+        font-size: 22px;
+        line-height: 1.35;
     }
     .contact-action-btn {
         font-size: 12px;
         gap: 10px;
         padding: 14px;
     }
+    .contact-action-btn span {
+        line-height: 1.5;
+    }
+    .contact-mini-card {
+        padding: 18px;
+    }
+    .footer-widget {
+        margin-top: 30px;
+    }
+    .footer-widget:first-child {
+        margin-top: 0;
+    }
     .floating-whatsapp {
-        bottom: 85px;
-        padding: 12px 16px;
-        right: 20px;
+        bottom: 82px;
+        padding: 12px 14px;
+        right: 18px;
     }
     .floating-whatsapp span {
         display: none;
     }
 }
-/* Wide Mobile Layout: 480px. */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+/* Small Mobile Layout: up to 479px */
+
+@media only screen and (max-width: 479px) {
+    .single-slide-item-table-cell {
+        padding: 105px 0 55px;
+    }
+    .single-slide-item h2 {
+        font-size: 26px;
+    }
+    .single-slide-item h4 {
+        font-size: 12px;
+        letter-spacing: 0.18em;
+    }
+    .section-title h2 {
+        font-size: 22px;
+    }
+    .team-photo-wrap img {
+        max-height: 210px;
+    }
+    .coverage-badge {
+        padding: 7px 9px;
+    }
+    .coverage-west {
+        left: 12px;
+    }
+    .coverage-east,
+    .coverage-ne {
+        right: 12px;
+    }
+    .coverage-central {
+        top: 118px;
+    }
+    .coverage-south {
+        bottom: 32px;
+    }
+    .contact-action-btn {
+        align-items: flex-start;
+    }
+    .contact-action-btn i {
+        flex-shrink: 0;
+    }
+}
+
+/* Wide Mobile Layout: 480px to 767px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .single-slide-item p {
+        max-width: 420px;
+    }
+    a.slide-btn {
+        max-width: 280px;
+    }
+    .team-photo-wrap img {
+        max-height: 260px;
+    }
+}
