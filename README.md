@@ -38,6 +38,8 @@ http://127.0.0.1:8000/
 
 This repo is configured for GitHub Pages using GitHub Actions.
 
+It is also ready for Vercel static deployment.
+
 Typical flow:
 
 1. Push changes to `main`
@@ -45,6 +47,18 @@ Typical flow:
 3. GitHub Pages serves `index.html`
 
 If Pages is not active yet in the repository settings, set the Pages source to `GitHub Actions`.
+
+### Vercel
+
+Recommended settings when importing this repo into Vercel:
+
+- Framework Preset: `Other`
+- Build Command: leave empty
+- Output Directory: leave empty
+- Install Command: leave empty
+- Root Directory: `.`
+
+Vercel will serve the static site from `index.html`, and `vercel.json` keeps the root route explicit.
 
 ## Notes
 
