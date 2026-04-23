@@ -26,6 +26,11 @@
         margin-bottom: 20px;
         min-height: 0;
     }
+    .brands-intro-strip span {
+        font-size: 11px;
+        margin: 4px;
+        padding: 9px 12px;
+    }
     .network-visual-copy {
         padding-top: 10px;
     }
@@ -132,6 +137,11 @@
     .single-growth-step {
         margin-bottom: 20px;
         min-height: 0;
+    }
+    .brands-intro-strip span {
+        font-size: 10px;
+        margin: 4px 3px;
+        padding: 8px 10px;
     }
     .network-summary-card,
     .network-card {

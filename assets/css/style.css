@@ -625,6 +625,23 @@ ul.team-social i:hover {
 /*08.START FUN FACT DESIGN AREA*/
 /*09.START WORK DESIGN AREA*/
 
+ .brands-intro-strip {
+    margin-top: -5px;
+    text-align: center;
+}
+.brands-intro-strip span {
+    background: #fff;
+    border: 1px solid #d9e8f2;
+    border-radius: 999px;
+    color: #10324a;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: 6px;
+    padding: 10px 14px;
+    text-transform: uppercase;
+}
 ul.work {
     list-style: outside none none;
     margin: 0;
@@ -642,8 +659,20 @@ ul.work li {
     margin: 0 2px;
 }
 .single-work {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 16px 30px rgba(16, 50, 74, 0.08);
     margin-top: 30px;
+    overflow: hidden;
     position: relative;
+}
+.single-work img {
+    filter: grayscale(100%);
+    transition: .4s;
+}
+.single-work:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.03);
 }
 ul.work li.active,
 ul.work li:hover {
@@ -684,6 +713,15 @@ ul.work li:hover {
     margin-top: 32%;
     color: #fff;
 }
+.work-info-text span {
+    color: rgba(255, 255, 255, 0.75);
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
 .work-info-text h5 {
     margin: 0 0 5px;
     color: #fff;
@@ -700,6 +738,13 @@ ul.work li:hover {
 }
 .work-inner .mix {
     display: none;
+}
+.brands-footer p {
+    color: #10324a;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
 }
 /*09.END WORK DESIGN AREA*/
 /*10.START TESTIMONIAL DESIGN AREA*/
