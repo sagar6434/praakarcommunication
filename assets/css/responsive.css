@@ -1,0 +1,200 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mainmenu .navbar-nav li a {
+        font-size: 12px;
+        padding: 30px 11px;
+    }
+    .menu-bg .mainmenu .navbar-nav li a {
+        padding: 30px 11px;
+    }
+    .logo {
+        float: left
+    }
+    .menu-bg .logo {
+        padding-top: 29px;
+    }
+    .nav-cta,
+    .menu-bg .nav-cta {
+        margin-top: 18px;
+        padding: 8px 14px !important;
+    }
+    .single-growth-step {
+        margin-bottom: 20px;
+        min-height: 0;
+    }
+    .network-visual-copy {
+        padding-top: 10px;
+    }
+    .india-coverage-card {
+        min-height: 320px;
+    }
+    .network-card {
+        min-height: 250px;
+    }
+    .contact-conversion-box,
+    .contact-benefits-box {
+        min-height: 0;
+    }
+}
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .navbar-toggle .icon-bar {
+        background: #f8f8f8;
+    }
+    .menu-bg .navbar-toggle .icon-bar {
+        background: #3ac4fa;
+    }
+    .navbar-toggle {
+        margin-right: 0px;
+        margin-top: -30px;
+    }
+    .navbar {
+        min-height: 0px;
+    }
+    .mainmenu .navbar-nav li a {
+        padding: 11px 15px;
+    }
+    .menu-bg .mainmenu .navbar-nav li a {
+        padding: 11px 15px;
+    }
+    .navbar-toggle {
+        margin-top: -34px;
+    }
+    .navbar-collapse {
+        background: rgba(0, 0, 0, .9);
+    }
+    .menu-bg .navbar-collapse {
+        background: rgba(0, 0, 0, .9);
+    }
+    .single-slide-item h2 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    a.slide-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        width: 120px;
+    }
+    .welcome-control {
+        display: none;
+    }
+    .single-slide-item p {
+        margin-bottom: 5px;
+    }
+    .section-title h2 {
+        font-size: 20px;
+    }
+    .single-featured {
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    .great-started-text h4 {
+        font-size: 15px;
+    }
+    ul.work li {
+        margin: 2px 0 5px;
+        padding: 8px 10px;
+    }
+    .single-post-content h4 > a {
+        font-size: 16px;
+    }
+    .footer-widget {
+        margin-top: 30px;
+    }
+    .nav-cta,
+    .menu-bg .nav-cta {
+        border-radius: 0;
+        margin-top: 0;
+        padding: 11px 15px !important;
+    }
+    .hero-kicker {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+    .hero-highlights span {
+        display: block;
+        margin: 8px auto;
+        max-width: 280px;
+    }
+    .lead-strip-copy,
+    .lead-strip-actions {
+        padding-top: 0;
+        text-align: center;
+    }
+    .lead-strip-btn {
+        display: block;
+    }
+    .single-growth-step {
+        margin-bottom: 20px;
+        min-height: 0;
+    }
+    .network-summary-card,
+    .network-card {
+        margin-top: 20px;
+        min-height: 0;
+    }
+    .network-visual-copy {
+        padding-top: 0;
+        text-align: center;
+    }
+    .india-coverage-card {
+        margin-top: 10px;
+        min-height: 330px;
+    }
+    .coverage-badge {
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+    .coverage-west {
+        left: 18px;
+    }
+    .coverage-east,
+    .coverage-ne {
+        right: 18px;
+    }
+    .coverage-core {
+        height: 126px;
+        width: 126px;
+    }
+    .coverage-core strong {
+        font-size: 18px;
+    }
+    .coverage-core small {
+        font-size: 9px;
+        line-height: 1.5;
+    }
+    .coverage-core-ring {
+        height: 160px;
+        width: 160px;
+    }
+    .network-intro p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    .contact-conversion-box,
+    .contact-benefits-box {
+        min-height: 0;
+        padding: 28px 20px;
+    }
+    .contact-action-btn {
+        font-size: 12px;
+        gap: 10px;
+        padding: 14px;
+    }
+    .floating-whatsapp {
+        bottom: 85px;
+        padding: 12px 16px;
+        right: 20px;
+    }
+    .floating-whatsapp span {
+        display: none;
+    }
+}
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
