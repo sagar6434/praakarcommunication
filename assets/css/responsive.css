@@ -82,14 +82,33 @@
     .team-intro-card {
         padding: 24px;
     }
+    .team-card-shell {
+        perspective: none;
+    }
     .team-photo-wrap {
         padding: 26px 24px 18px;
     }
     .team-photo-wrap img {
-        max-height: 260px;
+        max-width: 360px;
+    }
+    .team-photo-frame {
+        padding: 16px 16px 0;
+    }
+    .team-floating-chip {
+        font-size: 9px;
+        padding: 9px 10px;
     }
     .team-content {
-        padding: 34px 22px 6px;
+        padding: 34px 22px 10px;
+    }
+    .team-member {
+        font-size: 24px;
+    }
+    .team-focus-pills span {
+        font-size: 9px;
+    }
+    ul.team-social {
+        padding: 0 22px;
     }
     .brands-intro-strip span {
         font-size: 11px;
@@ -259,11 +278,36 @@
         margin-top: 22px;
         min-height: 0;
     }
+    .team-card-shell {
+        perspective: none;
+    }
     .team-photo-wrap {
         padding: 22px 18px 16px;
     }
+    .team-presence-label {
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+        padding: 9px 12px;
+    }
+    .team-photo-frame {
+        padding: 14px 12px 0;
+    }
     .team-photo-wrap img {
-        max-height: 230px;
+        max-width: 320px;
+    }
+    .team-floating-chip {
+        font-size: 9px;
+        letter-spacing: 1px;
+        padding: 8px 10px;
+    }
+    .team-floating-chip-left {
+        left: 2px;
+        top: 26px;
+    }
+    .team-floating-chip-right {
+        bottom: 18px;
+        right: 2px;
     }
     .team-role-badge {
         font-size: 10px;
@@ -271,7 +315,11 @@
         width: max-content;
     }
     .team-content {
-        padding: 32px 18px 4px;
+        padding: 32px 18px 10px;
+        text-align: center;
+    }
+    .team-kicker {
+        letter-spacing: 1.5px;
     }
     .team-member {
         font-size: 18px;
@@ -279,6 +327,17 @@
     }
     .team-description {
         font-size: 14px;
+    }
+    .team-focus-pills {
+        justify-content: center;
+    }
+    .team-focus-pills span {
+        font-size: 9px;
+        padding: 9px 10px;
+    }
+    ul.team-social {
+        padding: 0 18px;
+        text-align: center;
     }
     ul.team-social a {
         height: 40px;
@@ -459,5 +518,238 @@
     }
     .team-photo-wrap img {
         max-height: 260px;
+    }
+}
+
+/* Hero Refresh Overrides */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .single-slide-item h2 {
+        font-size: 50px;
+    }
+    .hero-stage-panel {
+        padding: 24px;
+    }
+    .hero-service-grid {
+        gap: 12px;
+    }
+    .hero-service-tile {
+        min-height: 150px;
+        padding: 14px;
+    }
+    .hero-metric-card {
+        min-width: 160px;
+    }
+    .hero-stage-heading {
+        display: block;
+    }
+    .hero-stage-mini-badge {
+        margin-top: 14px;
+        max-width: 150px;
+    }
+    .hero-floating-card {
+        max-width: 180px;
+        padding: 14px 16px;
+    }
+    .hero-floating-card-two {
+        right: -4px;
+        top: 6px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-top-area {
+        background: rgba(4, 20, 32, 0.78);
+    }
+    .logo a {
+        font-size: 22px;
+    }
+    .logo a small {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+    .single-slide-item-table-cell {
+        padding: 125px 0 70px;
+    }
+    .hero-layout {
+        display: block;
+    }
+    .hero-copy-block {
+        padding: 10px 0 0;
+        text-align: center;
+    }
+    .hero-proof-list {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-proof-item {
+        text-align: left;
+    }
+    .single-slide-item h2 {
+        font-size: 42px;
+        line-height: 1.08;
+    }
+    .hero-copy-block h4 {
+        font-size: 13px;
+        letter-spacing: 0.18em;
+    }
+    .single-slide-item p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 620px;
+    }
+    .hero-cta-group,
+    .hero-highlights,
+    .hero-metrics {
+        justify-content: center;
+    }
+    .hero-stage-card {
+        margin-top: 34px;
+        padding: 0;
+    }
+    .hero-stage-heading {
+        display: block;
+    }
+    .hero-stage-mini-badge {
+        margin-top: 14px;
+        max-width: 150px;
+    }
+    .hero-floating-card {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-top-area {
+        background: rgba(4, 20, 32, 0.88);
+        backdrop-filter: blur(10px);
+    }
+    .logo a {
+        font-size: 20px;
+    }
+    .logo a small {
+        font-size: 8px;
+        letter-spacing: 2px;
+        margin-top: 3px;
+    }
+    .single-slide-item-table-cell {
+        padding: 120px 0 60px;
+    }
+    .hero-layout {
+        display: block;
+    }
+    .hero-copy-block {
+        padding: 0;
+        text-align: center;
+    }
+    .hero-proof-list {
+        gap: 10px;
+        margin: 20px auto 0;
+        max-width: 100%;
+    }
+    .hero-proof-item {
+        gap: 12px;
+        padding: 13px 14px;
+        text-align: left;
+    }
+    .hero-proof-item i {
+        flex-basis: 36px;
+        font-size: 14px;
+        height: 36px;
+    }
+    .hero-proof-item span {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+    .single-slide-item h2 {
+        font-size: 32px;
+        line-height: 1.08;
+        margin-bottom: 16px;
+    }
+    .hero-copy-block h4 {
+        font-size: 12px;
+        letter-spacing: 0.16em;
+        margin-bottom: 16px;
+    }
+    .single-slide-item p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin: 0 auto;
+        max-width: 320px;
+    }
+    .hero-kicker {
+        font-size: 10px;
+        letter-spacing: 1.4px;
+        margin-bottom: 18px;
+        padding: 8px 12px;
+    }
+    .hero-cta-group {
+        display: block;
+        margin-top: 20px;
+    }
+    a.slide-btn {
+        display: block;
+        margin: 10px auto 0;
+        max-width: 250px;
+        width: 100%;
+    }
+    .hero-metrics {
+        display: block;
+        margin-top: 22px;
+    }
+    .hero-metric-card {
+        margin: 10px auto 0;
+        max-width: 280px;
+        min-height: 0;
+        min-width: 0;
+        text-align: left;
+    }
+    .hero-highlights {
+        display: block;
+        margin-top: 18px;
+    }
+    .hero-highlights span {
+        display: block;
+        margin: 8px auto 0;
+        max-width: 300px;
+    }
+    .hero-stage-card {
+        margin-top: 28px;
+        padding: 0;
+    }
+    .hero-stage-panel {
+        padding: 22px 18px;
+    }
+    .hero-stage-heading {
+        display: block;
+        margin-bottom: 16px;
+    }
+    .hero-stage-mini-badge {
+        margin-top: 14px;
+    }
+    .hero-stage-panel h5 {
+        font-size: 22px;
+    }
+    .hero-stage-focus {
+        padding: 16px;
+    }
+    .hero-service-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-service-tile {
+        min-height: 0;
+    }
+    .hero-stage-footer {
+        display: block;
+    }
+    .hero-stage-badge,
+    .hero-stage-note {
+        min-height: 0;
+    }
+    .hero-stage-note {
+        margin-top: 10px;
+    }
+    .hero-floating-card {
+        display: none;
     }
 }

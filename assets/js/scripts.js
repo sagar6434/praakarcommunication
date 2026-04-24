@@ -72,6 +72,39 @@ Version      : 1.0
         });
         /*END SMOOTH SCROLL JS*/
 
+        /*START TEAM TILT JS*/
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+            $('.js-team-tilt').each(function() {
+                var $shell = $(this);
+                var $card = $shell.find('.single-team');
+
+                $shell.on('mousemove', function(e) {
+                    var rect = this.getBoundingClientRect();
+                    var percentX = (e.clientX - rect.left) / rect.width;
+                    var percentY = (e.clientY - rect.top) / rect.height;
+                    var rotateY = (percentX - 0.5) * 18;
+                    var rotateX = (0.5 - percentY) * 14;
+
+                    $card
+                        .addClass('is-tilting')
+                        .css('--team-rotate-x', rotateX.toFixed(2) + 'deg')
+                        .css('--team-rotate-y', rotateY.toFixed(2) + 'deg')
+                        .css('--team-glow-x', (percentX * 100).toFixed(2) + '%')
+                        .css('--team-glow-y', (percentY * 100).toFixed(2) + '%');
+                });
+
+                $shell.on('mouseleave', function() {
+                    $card
+                        .removeClass('is-tilting')
+                        .css('--team-rotate-x', '0deg')
+                        .css('--team-rotate-y', '0deg')
+                        .css('--team-glow-x', '50%')
+                        .css('--team-glow-y', '16%');
+                });
+            });
+        }
+        /*END TEAM TILT JS*/
+
         /*START SCROLL TO UP*/
         $(window).on('scroll', function() {
             if ($(this).scrollTop() > 500) {
