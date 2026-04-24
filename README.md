@@ -1,56 +1,35 @@
 # PRaakar Communications
 
-Marketing website for PRaakar Communications LLP. This repository contains a static one-page agency site focused on PR, branding, advertising, digital marketing, and regional campaign reach across India.
-
-## Highlights
-
-- Premium hero section with stronger conversion messaging
-- Updated network section with coverage cards and India reach graphic
-- Refined brands showcase with stronger proof positioning
-- Quick contact actions for call, email, and WhatsApp
-- GitHub Pages-ready static entry point
+Static marketing website for PRaakar Communications LLP. The site presents the agency's services, team, network reach, client showcase, and direct contact options.
 
 ## Project Structure
 
-- `index.html` - Static entry point for GitHub Pages and other static hosting
-- `index.php` - PHP wrapper for environments that still use PHP hosting
-- `home.html` - Main source file for the site content and layout
-- `assets/css/` - Stylesheets
-- `assets/js/` - Frontend scripts
-- `assets/img/` - Logos, brand visuals, team images, and backgrounds
-- `.github/workflows/` - Deployment workflow for GitHub Pages
+- `index.html` - Canonical static entry point used by GitHub Pages, Vercel, and local preview
+- `index.php` - Optional PHP wrapper for environments that still expect a PHP entry file
+- `assets/css/` - Site and vendor stylesheets
+- `assets/js/` - Frontend behavior and plugin initialization
+- `assets/img/` - Brand, team, and client imagery
+- `.github/workflows/deploy-pages.yml` - GitHub Pages deployment workflow
 
 ## Local Preview
 
-Run a lightweight local server from the project root:
+From the project root, run:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open:
-
-```text
-http://127.0.0.1:8000/
-```
+Then open `http://127.0.0.1:8000/`.
 
 ## Deployment
 
-This repo is configured for GitHub Pages using GitHub Actions.
+### GitHub Pages
 
-It is also ready for Vercel static deployment.
-
-Typical flow:
-
-1. Push changes to `main`
-2. GitHub Actions builds and deploys the static site
-3. GitHub Pages serves `index.html`
-
-If Pages is not active yet in the repository settings, set the Pages source to `GitHub Actions`.
+Push to `main` and the GitHub Actions workflow will publish the static site artifact. In repository settings, set Pages to use `GitHub Actions` as the source.
 
 ### Vercel
 
-Recommended settings when importing this repo into Vercel:
+Recommended import settings:
 
 - Framework Preset: `Other`
 - Build Command: leave empty
@@ -58,17 +37,9 @@ Recommended settings when importing this repo into Vercel:
 - Install Command: leave empty
 - Root Directory: `.`
 
-Vercel will serve the static site from `index.html`, and `vercel.json` keeps the root route explicit.
+`vercel.json` keeps the root route pointed at `index.html`.
 
 ## Notes
 
-- `home.html` remains the editable source page used during development
-- `index.html` should stay in sync with `home.html` for static hosting
-- The old contact form backend was replaced with direct contact actions to improve reliability and conversion
-
-## Suggested Next Improvements
-
-- Add real case studies with measurable outcomes
-- Add client testimonials or media proof
-- Replace the stylized coverage graphic with a full India SVG map
-- Connect a real lead form or CRM capture flow
+- `index.html` is the single source of truth for site content
+- The contact section uses direct call, email, and WhatsApp actions instead of a server-side form handler

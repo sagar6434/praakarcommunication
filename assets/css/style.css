@@ -283,14 +283,6 @@ a.slide-btn:hover {
     background:url(../img/bg/slide-1.jpg);
     background-size: cover;
 }
-.slide-2 {
-    background:url(../img/bg/slide-2.jpg);
-    background-size: cover;
-}
-.slide-3 {
-    background:url(../img/bg/slide-3.jpg);
-    background-size: cover;
-}
 .single-slide-item {
     position: relative;
     z-index: 1;
@@ -823,66 +815,6 @@ ul.work li:hover {
     text-transform: uppercase;
 }
 /*09.END WORK DESIGN AREA*/
-/*10.START TESTIMONIAL DESIGN AREA*/
-
-.what-client-say-area {
-    background: rgba(0, 0, 0, 0) url("img/bg/testimonial-bg.jpg") repeat scroll 0 0 / cover;
-    position: relative;
-    z-index: 1;
-    background-attachment: fixed;
-}
-.what-client-say-area::after {
-    background: #000 none repeat scroll 0 0;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-}
-.testimonial-list {
-    margin-top: 30px;
-}
-.testimonial-section-inner {
-    display: block;
-    vertical-align: middle;
-}
-.testimonial-list {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
-    text-align: center;
-}
-.testimonial-author {
-    margin-bottom: 20px;
-}
-.testimonial-author img {
-    border: 3px solid #00afef;
-    border-radius: 50%;
-    height: auto;
-    width: 100px;
-}
-.single-testimonial p {
-    padding: 0 15px;
-    color: #fff;
-}
-.single-testimonial > h5 {
-    color: #fff;
-    margin-top: 15px;
-}
-.single-testimonial h6 {
-    color: #00afef;
-    font-style: italic;
-    font-weight: 700;
-}
-.single-testimonial h6 {
-    color: #1da;
-}
-.testimonial-list .owl-pagination {
-    margin-top: 10px;
-}
 .owl-carousel .owl-page {
     display: inline-block;
     zoom: 1;
@@ -1204,38 +1136,8 @@ ul.contact-list i {
 .footer-menu i {
     margin-right: 3px;
 }
-.single-latest-post img {
-    float: left;
-    margin-right: 10px;
-    padding: 3px;
-    width: 30%;
-}
-.single-latest-post h2 {
-    font-size: 12px;
-    margin: 5px 0;
-    cursor: pointer;
-    color: #fff;
-}
 .footer-widget h4 {
     color: #fff;
-}
-.single-latest-post h2:hover {
-    color: #00afef;
-    transition: .5s;
-}
-.single-latest-post span {
-    color: #e7e7e7;
-    font-size: 12px;
-}
-.single-latest-post i {
-    margin-right: 2px;
-}
-.single-latest-post {
-    margin-bottom: 10px;
-    overflow: hidden;
-}
-.single-latest-post img:hover {
-    opacity: .5;
 }
 .footer-social {
     margin-top: 20px;

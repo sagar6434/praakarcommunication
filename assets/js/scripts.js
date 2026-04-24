@@ -26,22 +26,6 @@ Version      : 1.0
         });
         /*END MAGNIFICENT POPUP JS*/
 
-        /*START TESTMONIAL JS*/
-        $(".testimonial-list").owlCarousel({
-            items: 1,
-            autoPlay: true,
-            navigation: false,
-            theme: "tp-round-button",
-            itemsDesktop: [1199, 1],
-            itemsDesktopSmall: [980, 1],
-            itemsTablet: [768, 1],
-            itemsTabletSmall: false,
-            itemsMobile: [479, 1],
-            autoHeight: true,
-            pagination: true,
-        });
-        /*END TESTMONIAL JS*/
-
         /*COUNTER UP JS*/
         $(".counter-number").counterUp({
             time: 2000,
@@ -87,28 +71,6 @@ Version      : 1.0
             e.preventDefault();
         });
         /*END SMOOTH SCROLL JS*/
-
-        /*START CONTACT MAP JS*/
-        // var contact = {
-        //     "lat": "23.1446247",
-        //     "lon": "79.9048111"
-        // }; 
-        // try {
-        //     $('.map').gmap3({
-        //         action: 'addMarker',
-        //         latLng: [contact.lat, contact.lon],
-        //         map: {
-        //             center: [contact.lat, contact.lon],
-        //             zoom: 5
-        //         },
-        //     }, {
-        //         action: 'setOptions',
-        //         args: [{
-        //             scrollwheel: false
-        //         }]
-        //     });
-        // } catch (err) {}
-  
 
         /*START SCROLL TO UP*/
         $(window).on('scroll', function() {
