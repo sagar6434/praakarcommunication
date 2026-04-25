@@ -143,7 +143,7 @@ Version      : 1.0
         /*START GENERIC DEPTH CARD TILT*/
         if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
             var depthCards = document.querySelectorAll(
-                '.theme-premium .about-story-panel, .theme-premium .about-proof-panel, .theme-premium .single-service-box, .theme-premium .single-growth-step, .theme-premium .network-summary-card, .theme-premium .network-card, .theme-premium .single-work, .theme-premium .contact-conversion-box, .theme-premium .contact-benefits-box'
+                '.theme-premium .about-story-panel, .theme-premium .about-proof-panel, .theme-premium .services-intro-panel, .theme-premium .single-service-box, .theme-premium .single-growth-step, .theme-premium .network-summary-card, .theme-premium .network-card, .theme-premium .brands-command-panel, .theme-premium .brands-ledger-panel, .theme-premium .brands-cta-ribbon, .theme-premium .single-work, .theme-premium .contact-conversion-box, .theme-premium .contact-benefits-box'
             );
 
             depthCards.forEach(function(card) {
@@ -186,7 +186,7 @@ Version      : 1.0
 
         /*START SCROLL REVEAL JS*/
         var revealTargets = document.querySelectorAll(
-            '.section-title, .about-story-panel, .about-proof-panel, .about-city-strip, .single-service-box, .single-growth-step, .team-card-shell, .network-summary-card, .network-card, .single-work, .contact-conversion-box, .contact-benefits-box, .brands-intro-strip, .lead-strip-copy, .lead-strip-actions'
+            '.section-title, .about-story-panel, .about-proof-panel, .about-city-strip, .services-intro-panel, .single-service-box, .single-growth-step, .team-card-shell, .network-summary-card, .network-card, .brands-command-panel, .brands-ledger-panel, .brands-cta-ribbon, .single-work, .contact-conversion-box, .contact-benefits-box, .brands-scope-strip, .lead-strip-copy, .lead-strip-actions'
         );
         if (revealTargets.length) {
             revealTargets.forEach(function(element, index) {
