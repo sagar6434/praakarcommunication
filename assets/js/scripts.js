@@ -53,13 +53,22 @@ Version      : 1.0
         /*END BOOTSTRAP SCROLL-SPY*/
 
         /*START CHANGE MENU BACKGROUND JS*/
-        $(window).on('scroll', function() {
-            if ($(window).scrollTop() > 200) {
-                $('.header-top-area').addClass('menu-bg');
+        function updateHeaderState() {
+            var scrollTop = $(window).scrollTop();
+            var documentHeight = $(document).height() - $(window).height();
+            var scrollPercent = documentHeight > 0 ? (scrollTop / documentHeight) * 100 : 0;
+
+            $('.header-scroll-line span').css('width', Math.min(scrollPercent, 100).toFixed(2) + '%');
+
+            if (scrollTop > 90) {
+                $('.header-top-area').addClass('menu-bg header-compact');
             } else {
-                $('.header-top-area').removeClass('menu-bg');
+                $('.header-top-area').removeClass('menu-bg header-compact');
             }
-        });
+        }
+
+        $(window).on('scroll resize', updateHeaderState);
+        updateHeaderState();
         /*END CHANGE MENU BACKGROUND JS*/
 
         /*START SMOOTH SCROLL JS*/
@@ -104,6 +113,110 @@ Version      : 1.0
             });
         }
         /*END TEAM TILT JS*/
+
+        /*START HERO PANEL TILT JS*/
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+            $('.js-hero-tilt').each(function() {
+                var $panel = $(this);
+
+                $panel.on('mousemove', function(e) {
+                    var rect = this.getBoundingClientRect();
+                    var percentX = (e.clientX - rect.left) / rect.width;
+                    var percentY = (e.clientY - rect.top) / rect.height;
+                    var rotateY = (percentX - 0.5) * 7;
+                    var rotateX = (0.5 - percentY) * 6;
+
+                    $panel.css('--hero-tilt-x', rotateX.toFixed(2) + 'deg')
+                        .css('--hero-tilt-y', rotateY.toFixed(2) + 'deg')
+                        .css('--hero-tilt-scale', '1.01');
+                });
+
+                $panel.on('mouseleave', function() {
+                    $panel.css('--hero-tilt-x', '0deg')
+                        .css('--hero-tilt-y', '0deg')
+                        .css('--hero-tilt-scale', '1');
+                });
+            });
+        }
+        /*END HERO PANEL TILT JS*/
+
+        /*START GENERIC DEPTH CARD TILT*/
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+            var depthCards = document.querySelectorAll(
+                '.theme-premium .about-story-panel, .theme-premium .about-proof-panel, .theme-premium .single-service-box, .theme-premium .single-growth-step, .theme-premium .network-summary-card, .theme-premium .network-card, .theme-premium .single-work, .theme-premium .contact-conversion-box, .theme-premium .contact-benefits-box'
+            );
+
+            depthCards.forEach(function(card) {
+                card.classList.add('js-depth-card');
+
+                card.addEventListener('mousemove', function(e) {
+                    var rect = card.getBoundingClientRect();
+                    var percentX = (e.clientX - rect.left) / rect.width;
+                    var percentY = (e.clientY - rect.top) / rect.height;
+                    var rotateY = (percentX - 0.5) * 10;
+                    var rotateX = (0.5 - percentY) * 8;
+
+                    card.classList.add('is-depth-active');
+                    card.style.transform = 'perspective(1400px) rotateX(' + rotateX.toFixed(2) + 'deg) rotateY(' + rotateY.toFixed(2) + 'deg) translateY(-8px)';
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    card.classList.remove('is-depth-active');
+                    card.style.transform = '';
+                });
+            });
+        }
+        /*END GENERIC DEPTH CARD TILT*/
+
+        /*START HEADER GLOW TRACKING*/
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+            var headerElement = document.querySelector('.header-top-area');
+            if (headerElement) {
+                headerElement.addEventListener('mousemove', function(e) {
+                    var rect = headerElement.getBoundingClientRect();
+                    var percentX = ((e.clientX - rect.left) / rect.width) * 100;
+                    var percentY = ((e.clientY - rect.top) / rect.height) * 100;
+
+                    headerElement.style.setProperty('--header-spot-x', percentX.toFixed(2) + '%');
+                    headerElement.style.setProperty('--header-spot-y', percentY.toFixed(2) + '%');
+                });
+            }
+        }
+        /*END HEADER GLOW TRACKING*/
+
+        /*START SCROLL REVEAL JS*/
+        var revealTargets = document.querySelectorAll(
+            '.section-title, .about-story-panel, .about-proof-panel, .about-city-strip, .single-service-box, .single-growth-step, .team-card-shell, .network-summary-card, .network-card, .single-work, .contact-conversion-box, .contact-benefits-box, .brands-intro-strip, .lead-strip-copy, .lead-strip-actions'
+        );
+        if (revealTargets.length) {
+            revealTargets.forEach(function(element, index) {
+                element.classList.add('fx-reveal');
+                element.style.transitionDelay = (index % 6) * 70 + 'ms';
+            });
+
+            if ('IntersectionObserver' in window) {
+                var revealObserver = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            revealObserver.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    rootMargin: '0px 0px -14% 0px',
+                    threshold: 0.1
+                });
+
+                revealTargets.forEach(function(element) {
+                    revealObserver.observe(element);
+                });
+            } else {
+                revealTargets.forEach(function(element) {
+                    element.classList.add('is-visible');
+                });
+            }
+        }
+        /*END SCROLL REVEAL JS*/
 
         /*START SCROLL TO UP*/
         $(window).on('scroll', function() {
