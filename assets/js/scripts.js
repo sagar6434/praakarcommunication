@@ -33,9 +33,20 @@ Version      : 1.0
         });
         /*COUNTER UP JS*/
 
-        /*START WORK JS*/
-        $('.work-inner').mixItUp();
-        /*END WORK JS*/
+        /*START BRANDS CAROUSEL JS*/
+        $(".brand-logo-carousel").owlCarousel({
+            items: 4,
+            autoPlay: true,
+            navigation: false,
+            pagination: true,
+            stopOnHover: true,
+            itemsDesktop: [1199, 4],
+            itemsDesktopSmall: [980, 3],
+            itemsTablet: [768, 2],
+            itemsTabletSmall: false,
+            itemsMobile: [479, 1]
+        });
+        /*END BRANDS CAROUSEL JS*/
 
         /*START MENU HIDE*/
         $(document).on('click', '.navbar-collapse.in', function(e) {

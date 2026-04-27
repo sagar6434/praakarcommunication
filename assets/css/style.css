@@ -3618,74 +3618,54 @@ h6 {
     padding: 10px 14px;
     text-transform: uppercase;
 }
-.brand-track-grid {
-    margin-top: 6px;
+.brand-logo-carousel {
+    margin-top: 34px;
 }
-.brand-track-card {
-    margin-top: 28px;
-    overflow: hidden;
+.brand-logo-slide {
+    padding: 0 12px 10px;
 }
-.brand-track-visual {
+.brand-logo-carousel .single-work {
     align-items: center;
     background:
         radial-gradient(circle at 0% 0%, rgba(0, 180, 255, 0.09), transparent 28%),
         linear-gradient(165deg, #fbfdff 0%, #eef6fd 100%);
     display: flex;
     justify-content: center;
+    margin-top: 0;
     min-height: 196px;
-    overflow: hidden;
     padding: 18px;
-    position: relative;
 }
-.brand-track-visual img {
+.brand-logo-carousel .single-work img {
     display: block;
     height: 128px;
     max-width: 100%;
     object-fit: contain;
-    padding: 0;
     width: auto;
 }
-.brand-track-body {
-    padding: 22px 22px 24px;
+.brand-logo-carousel .work-info-text {
+    color: #fff;
+    left: 0;
+    margin-top: 0;
+    padding: 0 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
 }
-.brand-track-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 14px;
+.brand-logo-carousel .owl-pagination {
+    margin-top: 14px;
+    text-align: center;
 }
-.brand-track-sector,
-.brand-track-scope {
+.brand-logo-carousel .owl-page span {
+    background: rgba(16, 50, 74, 0.2);
     border-radius: 999px;
     display: inline-block;
-    font-family: "Sora", sans-serif;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.11em;
-    padding: 8px 11px;
-    text-transform: uppercase;
+    height: 10px;
+    margin: 0 5px;
+    width: 10px;
 }
-.brand-track-sector {
-    background: rgba(0, 180, 255, 0.09);
-    border: 1px solid rgba(0, 180, 255, 0.14);
-    color: #12658f;
-}
-.brand-track-scope {
-    background: rgba(14, 43, 63, 0.05);
-    border: 1px solid rgba(17, 63, 92, 0.1);
-    color: #35586b;
-}
-.brand-track-body h5 {
-    color: #102f45;
-    font-family: "Sora", sans-serif;
-    font-size: 22px;
-    line-height: 1.35;
-    margin: 0 0 10px;
-}
-.brand-track-body p {
-    color: #567385;
-    line-height: 1.8;
-    margin: 0;
+.brand-logo-carousel .owl-page.active span {
+    background: #00afef;
 }
 .brands-footer {
     padding-top: 44px;
