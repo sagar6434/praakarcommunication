@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: Publish Website to GitHub Pages
 
 on:
   push:
@@ -17,31 +17,32 @@ concurrency:
 
 jobs:
   deploy:
+    name: Publish site
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
       - name: Prepare static site
         run: |
           mkdir -p _site
           cp -R assets _site/assets
-          cp index.html _site/index.html
+          cp *.html _site/
           cp favicon.ico _site/favicon.ico
           cp .nojekyll _site/.nojekyll
 
-      - name: Upload site artifact
+      - name: Upload website files
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy website
         id: deployment
         uses: actions/deploy-pages@v4
