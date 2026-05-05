@@ -1403,3 +1403,174 @@
         display: none;
     }
 }
+
+/* Mobile cleanup overrides */
+
+@media only screen and (max-width: 991px) {
+    .header-shell {
+        overflow: visible;
+    }
+    .header-main-row {
+        flex-wrap: nowrap;
+    }
+    .header-brand-col {
+        flex: 1 1 auto;
+        max-width: none;
+        min-width: 0;
+        width: auto;
+    }
+    .header-nav-col {
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: flex-end;
+        max-width: none;
+        padding-left: 0;
+        position: relative;
+        width: auto;
+    }
+    .header-nav-col .navbar,
+    .header-nav-col .navbar-header {
+        margin-bottom: 0;
+        width: auto;
+    }
+    .navbar-toggle {
+        display: block;
+        float: none;
+        margin-right: 0;
+        margin-top: 8px;
+    }
+    .mainmenu .navbar-nav {
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        display: block;
+        float: none;
+        padding: 0;
+    }
+    .mainmenu .navbar-nav li a,
+    .menu-bg .mainmenu .navbar-nav li a {
+        border-radius: 12px;
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        margin: 2px 0;
+        padding: 10px 12px;
+    }
+    .header-nav-col .navbar-collapse,
+    .menu-bg .header-nav-col .navbar-collapse {
+        background: rgba(6, 26, 40, 0.94);
+        border: 1px solid rgba(125, 232, 255, 0.2);
+        border-radius: 14px;
+        left: auto;
+        margin-top: 0;
+        padding: 8px;
+        position: absolute;
+        right: 0;
+        top: calc(100% + 8px);
+        width: min(320px, calc(100vw - 40px));
+        z-index: 40;
+    }
+    .header-nav-col .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .header-nav-col .navbar-collapse.in,
+    .menu-bg .header-nav-col .navbar-collapse.in {
+        display: block !important;
+        overflow: visible;
+    }
+    .services-grid-row > div {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .welcome-hero-area,
+    .welcome-slider-area,
+    .welcome-slider-area div,
+    .welcome-slider-area .carousel-inner,
+    .welcome-slider-area .carousel-inner .item,
+    .welcome-slider-area .single-slide-item,
+    .welcome-slider-area .single-slide-item-table {
+        height: auto !important;
+        min-height: 0;
+    }
+    .welcome-hero-area {
+        padding-bottom: 28px;
+    }
+    .single-slide-item-table-cell {
+        display: block;
+        padding: 148px 0 84px;
+    }
+    .hero-metrics {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin: 20px auto 0;
+        max-width: 280px;
+    }
+    .hero-metric-card {
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .hero-highlights span {
+        max-width: 280px;
+    }
+    .service-showcase-card,
+    .single-service-box {
+        min-height: 0;
+        text-align: left;
+    }
+    .services-grid-row > div {
+        margin-bottom: 18px;
+    }
+    .services-grid-row > div:last-child {
+        margin-bottom: 0;
+    }
+    .floating-whatsapp {
+        bottom: 68px;
+        padding: 10px;
+        right: 12px;
+    }
+    .floating-whatsapp i {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .welcome-hero-area {
+        padding-bottom: 36px;
+    }
+    .single-slide-item-table-cell {
+        padding-bottom: 96px;
+    }
+    .hero-stage-panel {
+        padding: 20px 16px;
+    }
+    .hero-stage-panel h5 {
+        font-size: 20px;
+    }
+    .hero-stage-focus,
+    .hero-service-tile,
+    .hero-stage-badge,
+    .hero-stage-note {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    .hero-stage-mini-badge {
+        max-width: 132px;
+        padding: 12px 14px 10px;
+    }
+    .hero-stage-mini-badge strong {
+        font-size: 18px;
+    }
+    .services-intro-panel {
+        padding: 22px 18px;
+    }
+    .services-grid-row > div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
