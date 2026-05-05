@@ -961,6 +961,7 @@
         justify-content: flex-end;
         max-width: none;
         padding-left: 0;
+        position: relative;
         width: auto;
     }
     .header-nav-col .navbar,
@@ -1003,12 +1004,19 @@
         background: rgba(6, 26, 40, 0.94);
         border: 1px solid rgba(125, 232, 255, 0.2);
         border-radius: 14px;
-        left: 8px;
+        left: auto;
         margin-top: 0;
         padding: 8px;
         position: absolute;
-        right: 8px;
+        right: 0;
         top: calc(100% + 8px);
+        width: min(280px, calc(100vw - 32px));
+        z-index: 40;
+    }
+    .header-nav-col .navbar-collapse.in,
+    .menu-bg .header-nav-col .navbar-collapse.in {
+        display: block !important;
+        overflow: visible;
     }
     .mainmenu .navbar-nav {
         background: transparent;
@@ -1199,6 +1207,27 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .mp-header-shell .header-main-row {
+        align-items: center;
+        min-height: 58px;
+    }
+    .mp-header-shell .header-brand-col {
+        min-width: 0;
+        padding-right: 8px;
+    }
+    .mp-header-shell .header-nav-col {
+        align-items: center;
+    }
+    .mp-header-shell {
+        position: relative;
+        z-index: 15;
+    }
+    .mp-header-shell .logo a {
+        max-width: 100%;
+    }
+    .mp-header-shell .logo a em {
+        display: none;
+    }
     .mp-landing-hero {
         padding-top: 168px;
     }

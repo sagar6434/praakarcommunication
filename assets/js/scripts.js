@@ -54,6 +54,18 @@ Version      : 1.0
                 $(this).collapse('hide');
             }
         });
+        $(document).on('click', '.navbar-toggle', function(e) {
+            var $toggle = $(this);
+            var $menu = $toggle.closest('.navbar').find('.navbar-collapse');
+
+            if (!$menu.length) {
+                return;
+            }
+
+            e.preventDefault();
+            $menu.toggleClass('in').css('display', $menu.hasClass('in') ? 'block' : 'none');
+            $toggle.attr('aria-expanded', $menu.hasClass('in') ? 'true' : 'false');
+        });
         /*END MENU HIDE*/
 
         /*START BOOTSTRAP SCROLL-SPY*/

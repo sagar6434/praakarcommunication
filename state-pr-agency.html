@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="author" content="PRaakar Communications LLP">
-    <meta name="description" content="Regional PR, advertising, and digital marketing support from PRaakar Communications LLP across priority Indian markets.">
+    <meta name="description" id="meta-description" content="Regional PR, advertising, and digital marketing support from PRaakar Communications LLP across priority Indian markets.">
     <meta name="keywords" content="regional PR agency India, state marketing support, PRaakar Communications, advertising agency India, digital marketing India">
-    <link rel="canonical" href="https://praakarcommunication.vercel.app/state-pr-agency.html">
-    <meta property="og:title" content="Regional PR & Marketing Support | PRaakar Communications LLP">
-    <meta property="og:description" content="Integrated PR, advertising, digital marketing, and campaign rollout support across key Indian markets.">
+    <link rel="canonical" id="meta-canonical" href="https://praakarcommunication.vercel.app/state-pr-agency.html">
+    <meta property="og:title" id="meta-og-title" content="Regional PR & Marketing Support | PRaakar Communications LLP">
+    <meta property="og:description" id="meta-og-description" content="Integrated PR, advertising, digital marketing, and campaign rollout support across key Indian markets.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://praakarcommunication.vercel.app/state-pr-agency.html">
+    <meta property="og:url" id="meta-og-url" content="https://praakarcommunication.vercel.app/state-pr-agency.html">
     <meta property="og:site_name" content="PRaakar Communications LLP">
     <meta property="og:locale" content="en_IN">
     <meta property="og:image" content="https://praakarcommunication.vercel.app/assets/img/logo.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Regional PR & Marketing Support | PRaakar Communications LLP">
-    <meta name="twitter:description" content="Regional PR and integrated marketing support for Indian growth markets.">
+    <meta name="twitter:title" id="meta-twitter-title" content="Regional PR & Marketing Support | PRaakar Communications LLP">
+    <meta name="twitter:description" id="meta-twitter-description" content="Regional PR and integrated marketing support for Indian growth markets.">
     <meta name="twitter:image" content="https://praakarcommunication.vercel.app/assets/img/logo.png">
     <title>Regional PR & Marketing Support | PRaakar Communications LLP</title>
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.ico" />
@@ -32,6 +32,38 @@
     <link href="assets/css/magnific-popup.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
+    <script type="application/ld+json" id="state-schema">
+        {
+            "@context": "https://schema.org",
+            "@type": "AdvertisingAgency",
+            "name": "PRaakar Communications LLP",
+            "url": "https://praakarcommunication.vercel.app/state-pr-agency.html",
+            "logo": "https://praakarcommunication.vercel.app/assets/img/logo.png",
+            "telephone": "+91-8770638170",
+            "email": "praakarcommunications@gmail.com",
+            "description": "Regional PR and integrated marketing support across Indian growth markets.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3rd Floor, Pandit Ravishankar Shukla Stadium, Wright Town",
+                "addressLocality": "Jabalpur",
+                "addressRegion": "Madhya Pradesh",
+                "postalCode": "482002",
+                "addressCountry": "IN"
+            },
+            "areaServed": {
+                "@type": "AdministrativeArea",
+                "name": "India"
+            },
+            "serviceType": [
+                "Public Relations",
+                "Press Conference Management",
+                "Digital Marketing",
+                "Outdoor Advertising",
+                "Indoor Advertising",
+                "Content and Campaign Messaging"
+            ]
+        }
+    </script>
 </head>
 
 <body class="theme-premium">
@@ -41,7 +73,7 @@
         <div class="container">
             <div class="header-shell mp-header-shell">
                 <div class="row header-main-row">
-                    <div class="col-md-4 col-sm-5">
+                    <div class="col-md-4 col-sm-5 header-brand-col">
                         <div class="logo">
                             <a href="index.html#home">
                                 <img src="assets/img/logo.png" class="logo-brand-img" alt="Praakar Communications" />
@@ -49,7 +81,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-8 col-sm-7">
+                    <div class="col-md-8 col-sm-7 header-nav-col">
                         <div class="mainmenu">
                             <div class="navbar navbar-nobg">
                                 <div class="navbar-header">
@@ -146,7 +178,7 @@
             <h2 id="state-cta-title">Need a PR and Marketing Partner?</h2>
             <p id="state-cta-copy">Share your target market and business goal. We will suggest a practical visibility roadmap for your expansion.</p>
             <div class="hero-cta-group text-center">
-                <a class="slide-btn smoth-scroll" href="index.html#contact">Request Proposal</a>
+                <a class="slide-btn" href="index.html#contact">Request Proposal</a>
                 <a class="slide-btn slide-btn-alt" href="mailto:praakarcommunications@gmail.com?subject=Regional%20Campaign%20Enquiry">Email Campaign Brief</a>
             </div>
             <p class="mp-landing-note" id="state-note">Phone: +91 8770638170 | Base office: 3rd Floor, Pandit Ravishankar Shukla Stadium, Wright Town, Jabalpur, Madhya Pradesh 482002</p>
@@ -159,6 +191,14 @@
         </div>
     </footer>
 
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
     <script>
         (function () {
             var serviceSet = [
@@ -309,8 +349,18 @@
             var params = new URLSearchParams(window.location.search);
             var key = params.get("state") || "maharashtra";
             var state = stateData[key] || stateData["maharashtra"];
+            var canonicalUrl = "https://praakarcommunication.vercel.app/state-pr-agency.html?state=" + encodeURIComponent(key);
+            var pageTitle = "PR Agency in " + state.stateName + " | PRaakar Communications LLP";
+            var metaDescription = "PRaakar Communications LLP provides PR, advertising, digital marketing, and campaign visibility support across " + state.stateName + " including " + state.cities.slice(0, 4).join(", ") + ".";
 
-            document.title = "PR Agency in " + state.stateName + " | PRaakar Communications LLP";
+            document.title = pageTitle;
+            document.getElementById("meta-description").setAttribute("content", metaDescription);
+            document.getElementById("meta-canonical").setAttribute("href", canonicalUrl);
+            document.getElementById("meta-og-title").setAttribute("content", pageTitle);
+            document.getElementById("meta-og-description").setAttribute("content", metaDescription);
+            document.getElementById("meta-og-url").setAttribute("content", canonicalUrl);
+            document.getElementById("meta-twitter-title").setAttribute("content", pageTitle);
+            document.getElementById("meta-twitter-description").setAttribute("content", metaDescription);
             document.getElementById("state-header-label").textContent = state.label;
             document.getElementById("state-hero-title").textContent = "PR, Advertising, and Digital Marketing Agency in " + state.stateName;
             document.getElementById("state-hero-copy").textContent = "PRaakar helps growth-focused brands in " + state.shortName + " build media visibility, local trust, and consistent business demand through integrated campaigns.";
@@ -322,6 +372,36 @@
             document.getElementById("state-coverage-copy").textContent = "Operational support is available across major and emerging markets in " + state.shortName + " for campaigns that require both speed and local relevance.";
             document.getElementById("state-cta-title").textContent = "Need a PR and Marketing Partner in " + state.shortName + "?";
             document.getElementById("state-cta-copy").textContent = "Share your target city and business goal. We will suggest a practical visibility roadmap for your " + state.shortName + " market expansion.";
+            document.getElementById("state-schema").textContent = JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "AdvertisingAgency",
+                "name": "PRaakar Communications LLP",
+                "url": canonicalUrl,
+                "logo": "https://praakarcommunication.vercel.app/assets/img/logo.png",
+                "telephone": "+91-8770638170",
+                "email": "praakarcommunications@gmail.com",
+                "description": metaDescription,
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "3rd Floor, Pandit Ravishankar Shukla Stadium, Wright Town",
+                    "addressLocality": "Jabalpur",
+                    "addressRegion": "Madhya Pradesh",
+                    "postalCode": "482002",
+                    "addressCountry": "IN"
+                },
+                "areaServed": {
+                    "@type": "AdministrativeArea",
+                    "name": state.stateName
+                },
+                "serviceType": [
+                    "Public Relations",
+                    "Press Conference Management",
+                    "Digital Marketing",
+                    "Outdoor Advertising",
+                    "Indoor Advertising",
+                    "Content and Campaign Messaging"
+                ]
+            }, null, 2);
 
             document.getElementById("state-whatsapp-btn").href = "https://wa.me/918770638170?text=" + encodeURIComponent("Hello PRaakar, we need PR support in " + state.stateName + ".");
 
