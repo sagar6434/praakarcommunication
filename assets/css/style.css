@@ -281,9 +281,9 @@ a.slide-btn:hover {
 }
 .single-slide-item h1,
 .single-slide-item h2 {
-    font-size: 58px;
+    font-size: 54px;
     color: #fff;
-    line-height: 1.05;
+    line-height: 1.08;
     margin-bottom: 18px;
 }
 .single-slide-item h2 span {
@@ -1455,12 +1455,13 @@ ul.contact-list i {
     text-transform: uppercase;
 }
 .hero-layout {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
-    gap: 12px;
+    gap: 34px;
+    justify-content: space-between;
 }
 .hero-copy-block {
-    max-width: 680px;
+    max-width: 600px;
     padding: 26px 0 20px;
     position: relative;
     z-index: 2;
@@ -1507,8 +1508,11 @@ ul.contact-list i {
     line-height: 1.75;
 }
 .hero-stage-card {
-    padding: 34px 0 52px 24px;
+    margin-left: auto;
+    max-width: 460px;
+    padding: 50px 12px 64px 0;
     position: relative;
+    width: 100%;
 }
 .hero-stage-panel {
     background:
@@ -1519,7 +1523,7 @@ ul.contact-list i {
     border-radius: 30px;
     box-shadow: 0 34px 90px rgba(0, 0, 0, 0.28);
     overflow: hidden;
-    padding: 30px;
+    padding: 28px;
     position: relative;
 }
 .hero-stage-panel::before {
@@ -1551,7 +1555,7 @@ ul.contact-list i {
 }
 .hero-stage-panel h5 {
     color: #fff;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.35;
     margin: 0;
     position: relative;
@@ -1712,7 +1716,7 @@ ul.contact-list i {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
     box-shadow: 0 24px 55px rgba(0, 0, 0, 0.22);
-    max-width: 210px;
+    max-width: 196px;
     padding: 16px 18px;
     position: absolute;
     z-index: 3;
@@ -1742,12 +1746,12 @@ ul.contact-list i {
     max-width: none;
 }
 .hero-floating-card-one {
-    bottom: 8px;
-    left: 0;
+    bottom: 16px;
+    left: -18px;
 }
 .hero-floating-card-two {
-    right: -8px;
-    top: 0;
+    right: -18px;
+    top: -24px;
 }
 .hero-metrics {
     display: flex;
@@ -1760,7 +1764,8 @@ ul.contact-list i {
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 18px;
     min-height: 108px;
-    min-width: 176px;
+    flex: 1 1 176px;
+    min-width: 0;
     padding: 18px 18px 16px;
 }
 .hero-metric-card strong {
@@ -2183,16 +2188,16 @@ ul.contact-list i {
     align-items: center;
     background: #25d366;
     border-radius: 999px;
-    bottom: 30px;
+    bottom: 24px;
     box-shadow: 0 12px 30px rgba(37, 211, 102, 0.28);
     color: #fff;
     display: inline-flex;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     gap: 10px;
-    padding: 13px 18px;
+    padding: 12px 16px;
     position: fixed;
-    right: 85px;
+    right: 18px;
     text-transform: uppercase;
     z-index: 99;
 }

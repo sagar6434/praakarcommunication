@@ -6,13 +6,62 @@
     }
     .single-slide-item h1,
     .single-slide-item h2 {
-        font-size: 44px;
-        line-height: 1.15;
+        font-size: 46px;
+        line-height: 1.08;
     }
     .single-slide-item p {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 700px;
+        max-width: 560px;
+    }
+    .hero-layout {
+        align-items: flex-start;
+        gap: 24px;
+    }
+    .hero-copy-block {
+        max-width: 520px;
+        padding-top: 12px;
+    }
+    .hero-stage-card {
+        max-width: 400px;
+        padding: 34px 0 72px;
+    }
+    .hero-stage-panel {
+        padding: 24px;
+    }
+    .hero-stage-panel h5 {
+        font-size: 20px;
+    }
+    .hero-stage-mini-badge {
+        min-width: 108px;
+        padding: 12px 14px 10px;
+    }
+    .hero-stage-mini-badge strong {
+        font-size: 17px;
+    }
+    .hero-service-grid {
+        gap: 12px;
+    }
+    .hero-service-tile {
+        min-height: 0;
+        padding: 14px;
+    }
+    .hero-floating-card {
+        max-width: 172px;
+        padding: 14px 15px;
+    }
+    .hero-floating-card-one {
+        bottom: 20px;
+        left: -12px;
+    }
+    .hero-floating-card-two {
+        right: -10px;
+        top: -10px;
+    }
+    .hero-metrics {
+        gap: 12px;
+    }
+    .hero-metric-card {
+        flex-basis: calc(33.333% - 8px);
+        padding: 16px 16px 14px;
     }
     .single-growth-step,
     .network-card {
@@ -57,13 +106,51 @@
         margin-right: auto;
         max-width: 640px;
     }
+    .hero-layout {
+        display: block;
+    }
+    .hero-copy-block {
+        max-width: 100%;
+        padding: 0;
+        text-align: center;
+    }
     .hero-cta-group {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+    .hero-proof-list {
+        margin: 20px auto 0;
+        max-width: 680px;
+    }
+    .hero-proof-item {
+        text-align: left;
+    }
+    .hero-metrics {
+        justify-content: center;
+    }
+    .hero-metric-card {
+        flex: 0 1 200px;
+    }
     .hero-highlights span {
         margin: 6px 4px;
+    }
+    .hero-stage-card {
+        margin: 28px auto 0;
+        max-width: 560px;
+        padding: 0;
+    }
+    .hero-stage-panel {
+        padding: 24px 22px;
+    }
+    .hero-stage-heading {
+        gap: 12px;
+    }
+    .hero-stage-panel h5 {
+        font-size: 22px;
+    }
+    .hero-floating-card {
+        display: none;
     }
     .lead-strip-copy,
     .lead-strip-actions {
@@ -116,6 +203,11 @@
         font-size: 11px;
         margin: 4px;
         padding: 9px 12px;
+    }
+    .floating-whatsapp {
+        bottom: 20px;
+        padding: 12px 16px;
+        right: 20px;
     }
     .network-visual-copy {
         padding-top: 0;
