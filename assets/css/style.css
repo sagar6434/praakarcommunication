@@ -1135,10 +1135,15 @@ ul.work li:hover {
 .logo-bg {
     background: #fff;
     border-radius: 12px;
+    display: block;
     height: auto;
     max-width: 240px;
     padding: 0.4em;
     width: 100%;
+}
+.footer-logo {
+    margin: 0 0 18px;
+    max-width: 240px;
 }
 .test {
     margin: 0 auto;
