@@ -189,10 +189,11 @@ fieldset {
 }
 .logo-brand-img {
     display: block;
-    height: 54px;
-    max-width: 100%;
+    height: auto;
+    max-height: 64px;
+    max-width: min(100%, 280px);
     object-fit: contain;
-    width: auto;
+    width: 100%;
 }
 .mainmenu .navbar-nav li a {
     color: #fff;
@@ -2417,6 +2418,7 @@ h6 {
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
+    gap: 14px;
     min-height: 50px;
     transition: min-height .3s ease;
 }
@@ -2424,11 +2426,16 @@ h6 {
     float: none;
 }
 .header-brand-col {
+    align-items: center;
+    display: flex;
     flex: 0 0 auto;
     max-width: none;
-    width: auto;
+    min-width: 0;
+    width: clamp(180px, 19vw, 300px);
 }
 .header-nav-col {
+    align-items: center;
+    display: flex;
     flex: 1 1 auto;
     max-width: none;
     min-width: 0;
@@ -2442,18 +2449,21 @@ h6 {
 }
 .logo {
     padding-top: 0;
+    width: 100%;
 }
 .logo a {
     align-items: center;
     color: #fff;
-    display: inline-flex;
+    display: block;
     flex-wrap: nowrap;
     font-family: "Sora", sans-serif;
     font-size: 15px;
     font-weight: 700;
     gap: 8px;
     letter-spacing: 0.06em;
+    line-height: 0;
     white-space: nowrap;
+    width: 100%;
 }
 .logo a em {
     color: #0fc6ff;
