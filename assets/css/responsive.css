@@ -930,7 +930,16 @@
 @media only screen and (max-width: 767px) {
     html,
     body {
+        max-width: 100%;
         overflow-x: hidden;
+    }
+    .welcome-hero-area .container,
+    .welcome-slider-area .container {
+        max-width: 100% !important;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 100% !important;
     }
     .header-top-area {
         padding-top: 3px;
@@ -1274,25 +1283,32 @@
         display: block;
         margin-left: 0;
         margin-right: 0;
+        max-width: 100%;
+        overflow: hidden;
+        width: 100%;
     }
     .hero-layout > [class*="col-"] {
         padding-left: 0;
         padding-right: 0;
+        width: 100%;
     }
     .hero-copy-block {
         max-width: 100%;
         padding: 0;
         text-align: center;
+        width: 100%;
     }
     .hero-proof-list {
         gap: 10px;
         margin: 20px auto 0;
         max-width: 100%;
+        width: 100%;
     }
     .hero-proof-item {
         gap: 12px;
         padding: 13px 14px;
         text-align: left;
+        width: 100%;
     }
     .hero-proof-item i {
         flex-basis: 36px;
@@ -1302,6 +1318,8 @@
     .hero-proof-item span {
         font-size: 13px;
         line-height: 1.7;
+        min-width: 0;
+        overflow-wrap: anywhere;
     }
     .single-slide-item h1,
     .single-slide-item h2 {
@@ -1328,17 +1346,21 @@
         font-size: 10px;
         letter-spacing: 1.4px;
         margin-bottom: 18px;
+        max-width: 100%;
+        overflow-wrap: anywhere;
         padding: 8px 12px;
+        white-space: normal;
     }
     .hero-cta-group {
         display: block;
         margin-top: 20px;
+        width: 100%;
     }
     a.slide-btn {
         display: block;
         margin: 10px auto 0;
         max-width: 250px;
-        width: 100%;
+        width: min(100%, 250px);
     }
     .hero-metrics {
         display: block;
@@ -1354,19 +1376,25 @@
     .hero-highlights {
         display: block;
         margin-top: 18px;
+        width: 100%;
     }
     .hero-highlights span {
         display: block;
         margin: 8px auto 0;
-        max-width: 300px;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        white-space: normal;
+        width: 100%;
     }
     .hero-stage-card {
         margin-top: 28px;
         max-width: 100%;
         padding: 0;
+        width: 100%;
     }
     .hero-stage-panel {
         padding: 22px 18px;
+        width: 100%;
     }
     .hero-stage-heading {
         display: block;
@@ -1377,6 +1405,7 @@
     }
     .hero-stage-panel h5 {
         font-size: 22px;
+        overflow-wrap: anywhere;
     }
     .hero-stage-focus {
         padding: 16px;
@@ -1503,6 +1532,7 @@
 @media only screen and (max-width: 767px) {
     .welcome-hero-area,
     .welcome-slider-area,
+    #welcome-slide-carousel,
     .welcome-slider-area div,
     .welcome-slider-area .carousel-inner,
     .welcome-slider-area .carousel-inner .item,
@@ -1510,13 +1540,21 @@
     .welcome-slider-area .single-slide-item-table {
         height: auto !important;
         min-height: 0;
+        overflow: visible;
     }
     .welcome-hero-area {
-        padding-bottom: 28px;
+        padding-bottom: 0;
+    }
+    .welcome-slider-area,
+    .welcome-slider-area .carousel-inner,
+    .welcome-slider-area .carousel-inner .item,
+    .welcome-slider-area .single-slide-item {
+        display: block;
+        position: relative;
     }
     .single-slide-item-table-cell {
         display: block;
-        padding: 148px 0 84px;
+        padding: 148px 0 110px;
     }
     .hero-metrics {
         display: grid;
@@ -1557,10 +1595,10 @@
 
 @media only screen and (max-width: 479px) {
     .welcome-hero-area {
-        padding-bottom: 36px;
+        padding-bottom: 0;
     }
     .single-slide-item-table-cell {
-        padding-bottom: 96px;
+        padding-bottom: 120px;
     }
     .single-slide-item h1,
     .single-slide-item h2 {
