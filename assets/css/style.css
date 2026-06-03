@@ -255,7 +255,16 @@ fieldset {
 .welcome-slider-area,
 .welcome-hero-area,
 .welcome-slider-area div {
-    height: 100%;
+    height: auto;
+}
+.welcome-hero-area,
+.welcome-slider-area,
+#welcome-slide-carousel,
+.welcome-slider-area .carousel-inner,
+.welcome-slider-area .carousel-inner .item,
+.welcome-slider-area .single-slide-item,
+.welcome-slider-area .single-slide-item-table {
+    min-height: 100vh;
 }
 .welcome-hero-area div.single-slide-item-table-cell,
 .welcome-hero-area div.single-slide-item-table-cell div {
@@ -314,7 +323,7 @@ a.slide-btn:hover {
         radial-gradient(circle at 88% 18%, rgba(255, 255, 255, 0.1), transparent 20%),
         linear-gradient(115deg, rgba(5, 16, 24, 0.9) 0%, rgba(8, 31, 47, 0.82) 45%, rgba(1, 19, 31, 0.72) 100%);
     content: "";
-    height: 100%;
+    bottom: 0;
     left: 0;
     position: absolute;
     top: 0;
