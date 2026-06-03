@@ -2440,7 +2440,7 @@ h6 {
     flex: 0 0 auto;
     max-width: none;
     min-width: 0;
-    width: clamp(180px, 19vw, 300px);
+    width: clamp(118px, 12vw, 160px);
 }
 .header-nav-col {
     align-items: center;
@@ -2473,6 +2473,13 @@ h6 {
     line-height: 0;
     white-space: nowrap;
     width: 100%;
+}
+.header-top-area .logo-brand-img {
+    height: auto;
+    max-height: 42px;
+    max-width: 104px;
+    object-fit: contain;
+    width: auto;
 }
 .logo a em {
     color: #0fc6ff;
